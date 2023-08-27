@@ -1,0 +1,193 @@
+@media (max-width: 1000px) {
+
+    .project-wrapper {
+        margin: 6rem 1rem 6rem 1rem;
+    }
+    nav {
+        padding: 1rem;
+    }
+    .logoDiv{
+        z-index: -1;
+        position:fixed;
+        left: 2rem;
+        transform: none;
+        width: calc(100vw/3);
+    }
+    .nav-links {
+        margin-right: 2rem;
+    }
+    .imgDiv {
+        background-size: calc(calc(100vw / 2) - 1rem);
+        width: calc(100vw - 2rem);
+        /* height: 281px; */
+    }
+    .designImgDiv {
+        height: calc(100vw / 2);
+    }
+    .indexImgDiv {
+        height: calc(100vw / 4);
+        transform: translateY(-50%);
+        transform: translateX(-50%);
+    }
+    .headingText:hover+.imgDiv::before,
+    .headingText:hover+.imgDiv::after {
+        right: 50%;
+    }
+}
+
+@media (max-width: 800px) {
+    .body-wrapper {
+        margin: 0 2rem;
+    }
+    .project-content:nth-child(2) {
+        max-width: 40%;
+    }
+    #favicon {
+        max-width: 100%;
+    }
+    .body-content{
+        left: 0;
+    }
+    .logoDiv{
+        position:fixed;
+        left: auto;
+        top: 2rem;
+        width: calc(100vw/2);
+    }
+}
+
+@media (max-width: 600px) {
+
+
+    .project-content:nth-child(2) {
+        max-width: 100%;
+    }
+    .project-content {
+        margin: 1rem 0 0 0;
+    }
+    .project-row {
+        flex-direction: column;
+    }
+    .project-content img,
+    .project-content figure,
+    .project-content .embedWrapper,
+    .project-content .carousel {
+        /* position: unset; */
+        top: unset;
+        transform: translateY(0);
+    }
+    .details {
+        max-height: unset;
+    }
+    .noMargin {
+        margin: 0;
+    }
+    .imgDiv {
+        /* opacity: 0.5; */
+    }
+    .indexImgDiv {
+        transform: translateY(35%);
+    }
+    #imgAbout {
+        position: unset;
+        top: unset;
+        transform: translateY(0);
+        background-size: 100%;
+        opacity: 100;
+        margin-top: 1rem;
+    }
+    /* #about-wrapper {
+        position: relative;
+        display: block;
+        height: auto;
+    } */
+    .headingText:hover+.imgDiv::before,
+    .headingText:hover+.imgDiv::after {
+        display: none;
+    }
+    p,
+    .body-content p {
+        max-width: 100%;
+    }
+    h2,
+    h2 a {
+        font-size: 2.5rem;
+    }
+    .twitter::before, .threads::before{
+        height: 2.5rem;
+        width: 2.5rem;
+        transform: translateY(0.25rem);
+      }
+    H4 {
+        font-size: 1.5rem;
+    }
+    hr {
+        margin-top: 1rem;
+    }
+    .rightAlign {
+        text-align: left;
+    }
+}
+
+
+/* NAV BAR RESIZE TITLE */
+
+@media (max-width: 470px) {
+    .title span {
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        opacity: 0;
+    }
+    .title:before {
+        content: "MB";
+        color: white;
+    }
+    .nav-links .btn-toggle {
+        display: none;
+    }
+}
+
+
+/* HEIGHT */
+@media (max-height: 1020px) {
+    #video-wrapper {
+        position: relative;
+        display: block;
+        height: auto;
+    }
+}
+@media (max-height: 800px) and (max-width: 800px) {
+    /* .body-wrapper {
+        position: relative;
+        display: block;
+        height: auto;
+    }
+    #imgAbout {
+        top: 19rem;
+    } */
+    .logoDiv{
+        display: none;
+    }
+}
+
+
+/* https://flaviocopes.com/dark-mode/ 
+ DARK MODE */
+
+/* @media (prefers-color-scheme: dark) {
+    body {
+        --color-green: #77cc77;
+        --color-white: black;
+        --color-black: #FAFAFA;
+        --color-grey: gray;
+        --color-lightgray: #404040;
+        --color-h2gray: rgb(44, 44, 44);
+    }
+    body.light-theme {
+        --color-white: white;
+        --color-black: #0B0B0B;
+        --color-lightgray: lightgray;
+        --color-h2gray: rgb(191, 191, 191);
+    }
+} */

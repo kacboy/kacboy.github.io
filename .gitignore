@@ -1,0 +1,11 @@
+old/
+files/
+img/leo-all/
+*.ai
+*.psd
+*.xd
+.DS_Store
+js/
+home.html
+Avatar
+flickity.css

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>@kacboy</title>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <div id="header"></div>
+    <script>
+        $(function () {
+            $("#header").load("/header.html");
+            $("#nav-placeholder").load("/nav.html");
+            $("#footer").load("/footer.html");
+        });
+    </script>
+</head>
+
+<body>
+    <video id="videoBG" src="/vid/Random Background.webm" autoplay loop playsinline muted oncontextmenu="return false;"></video>
+    <div class="body-wrapper" id="about-wrapper">
+        <img class="logoDiv" src="img/Logo.png" oncontextmenu="return false;"></img>
+        <div class="body-content">
+            <h3><span class="white-bg"> @kacboy</span></h3>
+            <div class="headingText">
+                <h2><a class="mdi mdi-youtube" href="https://youtube.com/kacboy"> YouTube</a></h2>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a class="twitter" href="https://twitter.com/kacboy"> Twitter</a></h2>
+            </div>
+            <br>
+            
+            <div class="headingText">
+                <h2><a class="mdi mdi-instagram" href="https://instagram.com/kacboy"> Instagram</a></h2>
+            </div>
+            <br>
+
+            <div class="headingText">
+                <h2><a class="threads" href="https://threads.net/kacboy"> Threads</a></h2>
+            </div>
+            <br>
+
+            <!--<div class="headingText">
+                <h2><a class="mdi mdi-email" href="mailto:me@marcusblackstock.com">
+                        Email</a></h2>
+            </div>
+            <div class="imgDiv designImgDiv" id="designImgLeo5"></div> -->
+
+
+            <div class="social">
+                <a href="mailto:me@marcusblackstock.com" class="btn-toggle nav-item mdi mdi-24px mdi-email"
+                    title="Email" ></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+</html>
