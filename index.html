@@ -1,28 +1,33 @@
 <!doctype html>
 <html lang="en">
-<style>body{background-color: #2670B7; opacity:0; transition: .25s;}</style>
+<style>body{background-color: #2670B7; opacity:0;}</style>
 
 <head>
     <title>@kacboy</title>
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <div id="header"></div>
-    <script>
-        $(function () {
-            $("#header").load("/header.html");
-            $("#nav-placeholder").load("/nav.html");
-            $("#footer").load("/footer.html");
-        });
-    </script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Karla:400,400i,700,700i">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#2670b7">
+    <meta name="msapplication-TileColor" content="#2670b7">
+    <meta name="theme-color" content="#2670b7">
 </head>
 
 <body>
     <video id="videoBG" src="vid/Random Background.webm" autoplay loop playsinline muted oncontextmenu="return false;"></video>
-    <div class="body-wrapper" id="about-wrapper">
+    <div class="body-wrapper">
         <img class="logoDiv" src="img/Logo.png" oncontextmenu="return false;"></img>
         <div class="body-content">
-            <h3><span class="white-bg"> @kacboy</span></h3>
+            <h3>@kacboy</h3>
             <div class="headingText">
-                <h2><a class="mdi mdi-youtube" href="https://youtube.com/kacboy"> YouTube</a></h2>
+                <h2><a class="youtube" href="https://youtube.com/kacboy"> YouTube</a></h2>
             </div>
             <br>
 
@@ -32,7 +37,7 @@
             <br>
             
             <div class="headingText">
-                <h2><a class="mdi mdi-instagram" href="https://instagram.com/kacboy"> Instagram</a></h2>
+                <h2><a class="instagram" href="https://instagram.com/kacboy"> Instagram</a></h2>
             </div>
             <br>
 
@@ -41,20 +46,11 @@
             </div>
             <br>
 
-            <!--<div class="headingText">
-                <h2><a class="mdi mdi-email" href="mailto:me@marcusblackstock.com">
-                        Email</a></h2>
-            </div>
-            <div class="imgDiv designImgDiv" id="designImgLeo5"></div> -->
-
-
             <div class="social">
-                <a href="mailto:kac@kacboy.com" class="btn-toggle nav-item mdi mdi-24px mdi-email"
+                <a href="mailto:kac@kacboy.com" class="btn-toggle email"
                     title="Email" ></a>
             </div>
         </div>
     </div>
-
-    <div id="footer"></div>
 </body>
 </html>
