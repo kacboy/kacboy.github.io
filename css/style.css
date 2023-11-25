@@ -262,19 +262,21 @@ h2 a:hover {
 .youtube::before {
   content: url(/img/youtube.svg);
 }
-
 .twitter::before {
   content: url(/img/twitter.svg);
 }
-
 .instagram::before {
   content: url(/img/instagram.svg);
 }
-
+.patreon::before {
+  content: url(/img/patreon.svg);
+}
 .threads::before {
   content: url(/img/threads.svg);
 }
-
+.store::before {
+  content: url(/img/store.svg);
+}
 .email::before {
   content: url(/img/email.svg);
 }
@@ -282,7 +284,9 @@ h2 a:hover {
 .youtube::before,
 .twitter::before,
 .instagram::before,
-.threads::before {
+.patreon::before,
+.threads::before,
+.store::before {
   display: inline-block;
   height: 4rem;
   width: 4rem;
