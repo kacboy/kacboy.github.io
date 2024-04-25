@@ -36,6 +36,7 @@
     .twitter::before,
     .instagram::before,
     .patreon::before,
+    .kofi::before,
     .threads::before,
     .store::before {
         height: 2.5rem;

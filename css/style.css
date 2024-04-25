@@ -293,6 +293,9 @@ h2 a:hover {
 .patreon::before {
   content: url(/img/patreon.svg);
 }
+.kofi::before {
+  content: url(/img/kofi.svg);
+}
 .threads::before {
   content: url(/img/threads.svg);
 }
@@ -307,6 +310,7 @@ h2 a:hover {
 .twitter::before,
 .instagram::before,
 .patreon::before,
+.kofi::before,
 .threads::before,
 .store::before {
   display: inline-block;
