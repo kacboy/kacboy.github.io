@@ -19,7 +19,7 @@
         position:fixed;
         left: auto;
         top: 2rem;
-        width: calc(100vw/2);
+        width: calc(100vw/3);
     }
 }
 
@@ -38,6 +38,7 @@
     .patreon::before,
     .kofi::before,
     .threads::before,
+    .emailBig::before,
     .store::before {
         height: 2.5rem;
         width: 2.5rem;

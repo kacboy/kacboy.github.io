@@ -302,7 +302,7 @@ h2 a:hover {
 .store::before {
   content: url(/img/store.svg);
 }
-.email::before {
+.email::before, .emailBig::before {
   content: url(/img/email.svg);
 }
 
@@ -312,6 +312,7 @@ h2 a:hover {
 .patreon::before,
 .kofi::before,
 .threads::before,
+.emailBig::before,
 .store::before {
   display: inline-block;
   height: 4rem;
