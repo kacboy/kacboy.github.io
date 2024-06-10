@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Geomanist-Bold';
+    src: url('../fonts/geomanist-bold-webfont.ttf') format('truetype');
+  }
+  
+  @font-face {
+    font-family: 'Geomanist-Medium';
+    src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
+  }
+
+body {
+    --color-green: #77cc77;
+    --color-white: white;
+    --color-black: black;
+    --color-gray: gray;
+    --color-lightgray: lightgray;
+    --color-h2gray: rgb(191, 191, 191);
+    --color-blue: #2670B7;
+    font-size: 1rem;
+    background-color: var(--color-blue);
+    color: var(--color-black);
+    /* https://www.w3schools.com/howto/howto_css_disable_text_selection.asp */
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    opacity: 1;
+}
+
+#videoBG {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    animation: fadeIn 1s; 
+  }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+table {
+    font-family: 'Karla';
+    font-size: 2rem;
+    margin: auto;
+    background-color: white;
+    padding: 1.5rem 3rem;
+    filter: drop-shadow(0px 1px 1px var(--color-black)) drop-shadow(0px 0px 10px var(--color-blue));
+}
+
+th {
+    font-family: 'Geomanist-Bold';
+    font-weight: 500;
+    text-align: left;
+    color: var(--color-blue);
+    background-color: none;
+    font-size: 2.5rem;
+    background-color: non;
+    padding-bottom: 0.5rem;
+}
+
+td {
+    font-weight: normal;
+}
+
+td:not(:last-child), th:not(:last-child) {
+    padding-right: 3rem;
+}
+
+tbody td::before {
+    content:"▪ ";
+    color: var(--color-blue);
+}
+
+a {
+    color: var(--color-black);
+}
+a:hover, a:active {
+    font-weight: bold;
+    color: var(--color-blue);
+}
