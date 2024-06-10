@@ -35,6 +35,7 @@ body {
     left: 0;
     z-index: -2;
     animation: fadeIn 1s; 
+    mix-blend-mode: luminosity;
   }
 
 .container {
@@ -42,12 +43,17 @@ body {
     justify-content: center;
     align-items: center;
     height: 95vh;
+    margin: auto;
+}
+
+.ad {
+    filter: drop-shadow(0px 1px 1px var(--color-black)) drop-shadow(0px 0px 10px var(--color-blue));
 }
 
 table {
     font-family: 'Karla';
     font-size: 2rem;
-    margin: auto;
+    
     background-color: white;
     padding: 1.5rem 3rem;
     filter: drop-shadow(0px 1px 1px var(--color-black)) drop-shadow(0px 0px 10px var(--color-blue));
@@ -62,17 +68,14 @@ th {
     font-size: 2.5rem;
     background-color: non;
     padding-bottom: 0.5rem;
+    padding-right: 3rem;
 }
 
 td {
     font-weight: normal;
 }
 
-td:not(:last-child), th:not(:last-child) {
-    padding-right: 3rem;
-}
-
-tbody td::before {
+tbody td:not(:empty):not(.credits):before {
     content:"▪ ";
     color: var(--color-blue);
 }
@@ -83,4 +86,20 @@ a {
 a:hover, a:active {
     font-weight: bold;
     color: var(--color-blue);
+}
+
+.credits {
+    text-align: center;
+}
+.credits img{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    filter: brightness(50%);
+}
+.credits img:hover, .credits img:active{
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(96%) saturate(730%) hue-rotate(177deg) brightness(89%) contrast(86%);
 }
