@@ -53,7 +53,7 @@ body {
 }
 
 table, .banner-adv {
-    transform: translateY(4vh);
+    /* transform: translateY(4vh); */
     font-family: 'Karla';
     /* min-width: 70%; */
     font-size: 2rem;
