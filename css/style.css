@@ -299,6 +299,9 @@ h2 a:hover {
 .threads::before {
   content: url(/img/threads.svg);
 }
+.bluesky::before, .bluesky::before {
+  content: url(/img/bluesky.svg);
+}
 .store::before {
   content: url(/img/store.svg);
 }
@@ -312,6 +315,7 @@ h2 a:hover {
 .patreon::before,
 .kofi::before,
 .threads::before,
+.bluesky::before,
 .emailBig::before,
 .store::before {
   display: inline-block;
