@@ -309,15 +309,7 @@ h2 a:hover {
   content: url(/img/email.svg);
 }
 
-.youtube::before,
-.twitter::before,
-.instagram::before,
-.patreon::before,
-.kofi::before,
-.threads::before,
-.bluesky::before,
-.emailBig::before,
-.store::before {
+.icon::before {
   display: inline-block;
   height: 4rem;
   width: 4rem;
