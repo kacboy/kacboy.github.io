@@ -1,5 +1,6 @@
 old/
 files/
+!files/Handbrake.PSP.720x576.json
 img/leo-all/
 *.ai
 *.psd
