@@ -1,0 +1,255 @@
+@font-face {
+    font-family: 'Geomanist-Bold';
+    src: url('../fonts/geomanist-bold-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Geomanist-Medium';
+    src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'materialdesignicons';
+    src: url('/fonts/materialdesignicons-webfont.woff2') format('woff2');
+}
+
+body {
+    transition: .25s;
+    --color-blue: #2670B7;
+    --color-white: white;
+    --color-black: black;
+    --color-gray: gray;
+    --color-lightgray: lightgray;
+    --color-h2gray: gray;
+    font-family: 'Karla', sans-serif;
+    font-size: 1rem;
+    margin: auto;
+    background-color: var(--color-white);
+    color: var(--color-black);
+    opacity: 1;
+    visibility: visible;
+}
+
+.BG {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -2;
+    animation: fadeIn 1s;
+    /* mix-blend-mode: luminosity; */
+}
+
+img {
+    width: 100%;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+/* BODY CONTENT MARGINS */
+.project-wrapper {
+    margin: 5rem auto;
+    max-width: 1000px;
+    background-color: #fff;
+    filter: drop-shadow(0px 1px 1px var(--color-black)) drop-shadow(0px 0px 10px var(--color-blue));
+    padding: 1rem;
+}
+
+.project-row {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.project-content {
+    margin: 1rem 0;
+    width: 100%;
+}
+
+.project-content img {
+    position: relative;
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+}
+
+.project-content p:not(.gray) {
+    padding-right: 1rem;
+}
+
+.noMargin {
+    margin: 0 !important;
+}
+
+/* HIGHLIGHT COLOR */
+/* https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
+::selection {
+    background: var(--color-blue);
+    color: white;
+}
+
+::-moz-selection {
+    background: var(--color-blue);
+    color: white;
+}
+
+@media (max-width: 1032px) {
+    .project-wrapper {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 850px) {
+    .server-icon {
+        width: 25% !important;
+    }
+
+    #server-icon-img {
+        max-width: 100% !important;
+    }
+}
+
+#server-icon-img {
+    max-width: 50%;
+    float: right;
+    image-rendering: pixelated;
+}
+
+/* BODY TEXT STYLES */
+p {
+    margin: 0;
+}
+
+a,
+p a,
+li a {
+    color: var(--color-blue);
+    font-style: normal;
+    text-decoration: underline;
+    overflow-wrap: break-word;
+    /* position: relative; */
+}
+
+a:hover,
+p a:hover,
+h1 a:hover,
+li a:hover {
+    cursor: pointer;
+    color: var(--color-white);
+    text-decoration: none;
+    background: var(--color-blue);
+    /* background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 10%, var(--color-blue) 10%, var(--color-blue) 90%, rgba(255, 255, 255, 0) 90%); */
+
+}
+
+.credits a:hover {
+    background: none;
+}
+
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+    text-decoration: none;
+}
+
+a:active {
+    color: inherit;
+}
+
+.black {
+    color: var(--color-black);
+}
+
+.gray {
+    color: var(--color-gray);
+    font-style: italic;
+}
+
+code {
+    max-width: 500px;
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    font-family: 'Karla';
+    font-size: 1.25rem;
+    background-color: var(--color-lightgray);
+    overflow-wrap: break-word;
+
+}
+
+.credits {
+    text-align: center;
+}
+
+.credits img {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    filter: brightness(50%);
+}
+
+.credits img:hover, .credits img:active {
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    filter: brightness(0) saturate(100%) invert(34%) sepia(96%) saturate(730%) hue-rotate(177deg) brightness(89%) contrast(86%);
+}
+
+h2,
+h2 a,
+h1 {
+    margin: 0;
+    font-size: 4rem;
+    font-family: 'Geomanist-Bold';
+    color: var(--color-white);
+    text-decoration: none;
+}
+
+h3 {
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    color: var(--color-blue);
+    font-family: 'Geomanist-Bold';
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    -webkit-text-stroke-width: 0px;
+}
+
+hr {
+    border: 0.5px solid var(--color-lightgray);
+    margin-bottom: 1rem;
+}
+
+.rightAlign {
+    text-align: right;
+}
+
+/* MINECRAFT MAP OVERVIEWER */
+.map {
+    background-color: black;
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+}
+
+.map iframe {
+    width: 100%;
+    height: 100%;
+    /* max-height:calc(100% - 1rem); */
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
