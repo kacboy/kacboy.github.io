@@ -123,7 +123,7 @@ html {
     }
 }
 
-@media (max-height: 1080px) {
+@media (max-height: 1020px) {
     .project-wrapper {
         margin: 0rem auto;
     }
