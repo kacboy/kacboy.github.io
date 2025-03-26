@@ -2,7 +2,7 @@
     {
         "path": "404.html",
         "type": "file",
-        "md5": "97c607b0696e59abc4ec90ba00cdcdc5"
+        "md5": "4e4e8be548bd2b51a282693e5f491d24"
     },
     {
         "path": "assets",
@@ -27,7 +27,7 @@
     {
         "path": "/assets/css/style.css",
         "type": "file",
-        "md5": "8459fcc02344049edb0603f7cf31ed2a"
+        "md5": "741dd8d6bf4505a56917ad9f84753654"
     },
     {
         "path": "assets/dynamic",
@@ -117,27 +117,42 @@
     {
         "path": "/authors/marcus/index.html",
         "type": "file",
-        "md5": "726098f560cba1a66d98fd6f3a5cf916"
+        "md5": "46de8acee73522fe4c5c7af1f1cbe40b"
+    },
+    {
+        "path": "authors/marcus/page",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "authors/marcus/page/2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/authors/marcus/page/2/index.html",
+        "type": "file",
+        "md5": "704c0b803794e027b1b1fa4a2a22d799"
     },
     {
         "path": "feed.json",
         "type": "file",
-        "md5": "71b5ea1b41ddab4cbaf93e64c8c2c105"
+        "md5": "f6d11fb49aff25ce6f9b3ff191d1a3b1"
     },
     {
         "path": "feed.xml",
         "type": "file",
-        "md5": "870114e849eee2c25747b0f43f5e58a5"
+        "md5": "2072315d6504cd95aed820af21416a63"
     },
     {
         "path": "how-to-watch-3d-movies-on-psvr2-using-free-software.html",
         "type": "file",
-        "md5": "2282e47085501eb27edb4c8eaa92f75a"
+        "md5": "8186594c3bfd9e8e1477300ce2be1b97"
     },
     {
         "path": "index.html",
         "type": "file",
-        "md5": "3c24eb82db53477d2bb21485701bc21e"
+        "md5": "e5a0b6c23e6e45e9cc71173823b78af2"
     },
     {
         "path": "media",
@@ -857,37 +872,52 @@
     {
         "path": "obscure-playstation-consoles.html",
         "type": "file",
-        "md5": "be5b1082e7817c0b431f23a68f072beb"
+        "md5": "7e26f9eb33a6b989a840fcaf7b8bc423"
     },
     {
         "path": "onplaystation-or-a-precursor-to-playstation-stars.html",
         "type": "file",
-        "md5": "9e72735810b19302a7585f1295169121"
+        "md5": "c7d5a10710ecc64c13f7bd013e63b64f"
+    },
+    {
+        "path": "page",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "page/2",
+        "type": "directory",
+        "md5": false
+    },
+    {
+        "path": "/page/2/index.html",
+        "type": "file",
+        "md5": "f5de0225d4b228daee986d6b1d50c685"
     },
     {
         "path": "playstation-portal-or-206-hdr-issues.html",
         "type": "file",
-        "md5": "77766098c40ddd45c4285c1a71bb096d"
+        "md5": "fb4a97e18f8ca77d722804cb57108bf6"
     },
     {
         "path": "playstation-vr2-2024-impressions-powerful-and-pricey-gaming.html",
         "type": "file",
-        "md5": "af3063a0b2a05326c4241213ed95baf1"
+        "md5": "99b54fbb7fab1c1e9eb754eda7a4417b"
     },
     {
         "path": "ps-classics-catalogue-or-buying-psp-games-in-2024.html",
         "type": "file",
-        "md5": "ed7f1506e839bbb47ee1cbcbd9bb0ef1"
+        "md5": "20da61fff5357fa74c91387eb854f8ea"
     },
     {
         "path": "ps-plus-tiers-6-month-later.html",
         "type": "file",
-        "md5": "db61a271cc3054e8100b0e58cdd4878f"
+        "md5": "42e9ceac8dfaee1339765c21f4fd83d3"
     },
     {
         "path": "remembering-the-legacy-of-defunct-playstation-studios.html",
         "type": "file",
-        "md5": "56538bc06f33ad81e64e20aa3f8c5cd0"
+        "md5": "a327d3b37cf223a932ee7337bf4985a5"
     },
     {
         "path": "robots.txt",
@@ -897,7 +927,7 @@
     {
         "path": "sitemap.xml",
         "type": "file",
-        "md5": "53e98f41c9698734d7c9d968faa996aa"
+        "md5": "6f8f4de7b5e5874a152e4a52548fca90"
     },
     {
         "path": "sitemap.xsl",
@@ -912,31 +942,31 @@
     {
         "path": "/tags/index.html",
         "type": "file",
-        "md5": "d2eb46df212ec953a311decfeffdacf7"
+        "md5": "5af0ae0c1d097f3abc5620c9aa20f812"
     },
     {
         "path": "this-is-why-we-need-ps3-backwards-compatibility.html",
         "type": "file",
-        "md5": "818f91240586e2f7e674e311c297e07d"
+        "md5": "1e11976da6f28722c4907dd89a3ae9b6"
     },
     {
         "path": "uncharted-2-multiplayer-back-from-the-dead.html",
         "type": "file",
-        "md5": "e36699daa9d27a8a668b19b60ded09a4"
+        "md5": "83d3e373b38bf090496e456d4cee4841"
     },
     {
         "path": "what-does-quest-pro-mean-for-psvr2.html",
         "type": "file",
-        "md5": "5728af72e6b39bb5462df38a6e4f5b86"
+        "md5": "187d44b640bb2f899d8f00c329e978ff"
     },
     {
         "path": "what-is-the-best-android-playstation-remote-play-app.html",
         "type": "file",
-        "md5": "f9190ed451aa017e06d69b3575c8e9f9"
+        "md5": "53ca35bd7a907796a650367af5145c8e"
     },
     {
-        "path": "wiki-2.html",
+        "path": "wiki.html",
         "type": "file",
-        "md5": "0495b0f8143bd29533d634247a5be920"
+        "md5": "810eb5beb6c890f7ed2fc72419a2516d"
     }
 ]

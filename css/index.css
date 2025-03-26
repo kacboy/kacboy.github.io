@@ -342,6 +342,10 @@ h2 a:hover {
     content: url(/img/store.svg);
 }
 
+.rss::before {
+    content: url(/img/rss.svg);
+}
+
 .email::before, .emailBig::before {
     content: url(/img/email.svg);
 }
