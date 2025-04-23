@@ -13,9 +13,12 @@
         <meta name="msapplication-TileColor" content="#2670b7">
         <meta name="theme-color" content="#2670b7">
         <script>
-        // Redirect to /blog/store but keep the same browser tab
+        // Instantly redirect to /blog/store
         window.location.replace("/blog/store");
         </script>
+        <noscript>
+        <meta http-equiv="refresh" content="0; url=/blog/store" />
+        </noscript>
     </head>
     <body style="margin:0;">
         <iframe src="https://kacboy.com/blog/store"
