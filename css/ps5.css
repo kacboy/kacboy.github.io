@@ -50,6 +50,10 @@ body {
     /* Stack items vertically */
 }
 
+hr {
+    border: 0.5px solid var(--color-lightgray);
+    margin-bottom: 1rem;
+}
 
 table {
     /* transform: translateY(4vh); */
