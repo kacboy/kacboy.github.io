@@ -95,6 +95,13 @@ html {
     margin: 0 !important;
 }
 
+ul {
+    list-style-type: square;
+}
+li::marker {
+  color: var(--color-blue);
+}
+
 /* HIGHLIGHT COLOR */
 /* https://css-tricks.com/overriding-the-default-text-selection-color-with-css/ */
 ::selection {
