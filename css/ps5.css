@@ -8,6 +8,11 @@
     src: url('../fonts/geomanist-medium-webfont.ttf') format('truetype');
 }
 
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     --color-green: #77cc77;
     --color-white: white;
@@ -24,6 +29,18 @@ body {
     -ms-user-select: none;
     user-select: none;
     opacity: 1;
+
+    display: flex;
+    justify-content: center; /* horizontal center */
+    align-items: center;     /* vertical center */
+}
+
+.container {
+    /* DON'T set height/min-height here; Google owns those now */
+    display: flex;
+    flex-direction: column;
+    /* you can keep align-items: center if you want inner horizontal centering */
+    align-items: center;
 }
 
 .BG {
@@ -36,18 +53,6 @@ body {
     z-index: -2;
     animation: fadeIn 1s;
     mix-blend-mode: luminosity;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    /* Center vertically */
-    height: 95vh;
-    /* Full viewport height */
-    flex-direction: column;
-    /* Stack items vertically */
 }
 
 hr {
