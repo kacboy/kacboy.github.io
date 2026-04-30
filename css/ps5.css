@@ -120,5 +120,5 @@ table {
     display: inline-block;
     height: 3rem;
     width: 3rem;
-    filter: brightness(0) saturate(100%) invert(34%) sepia(96%) saturate(730%) hue-rotate(177deg) brightness(89%) contrast(86%);
+    filter: brightness(0) saturate(100%) invert(40%) sepia(97%) saturate(2745%) hue-rotate(201deg) brightness(85%) contrast(96%);
 }
