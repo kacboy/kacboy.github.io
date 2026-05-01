@@ -28,12 +28,35 @@
     <meta name="theme-color" content="#2670b7">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3360867493228241"
      crossorigin="anonymous"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var isMobile = window.innerWidth <= 768;
+            var isSlowConnection = navigator.connection && ['slow-2g', '2g', '3g'].includes(navigator.connection.effectiveType);
+            if (!isMobile && !isSlowConnection) {
+                var video = document.createElement('video');
+                video.id = 'videoBG';
+                video.src = 'vid/Random Background.webm';
+                video.autoplay = true;
+                video.loop = true;
+                video.playsinline = true;
+                video.muted = true;
+                video.oncontextmenu = function() { return false; };
+                video.style.cssText = 'object-fit: cover; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -2; animation: fadeIn 1s;';
+                document.body.insertBefore(video, document.body.firstChild);
+            } else {
+                var img = document.createElement('img');
+                img.id = 'bgImg';
+                img.src = 'img/bg.png';
+                img.oncontextmenu = function() { return false; };
+                img.style.cssText = 'object-fit: cover; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -2;';
+                document.body.insertBefore(img, document.body.firstChild);
+            }
+        });
+    </script>
 </head>
 
 <body>
-    <video id="videoBG" src="vid/Random Background.webm" autoplay loop playsinline muted
-        oncontextmenu="return false;"></video>
-    <img id="bgImg" src="img/bg.png" style="display:none; object-fit: cover; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: -2;" oncontextmenu="return false;">
+    <div class="body-wrapper">
     <div class="body-wrapper">
         <img class="logoDiv" src="img/Logo.png" oncontextmenu="return false;"></img>
         <div class="body-content">
@@ -94,16 +117,6 @@
             </div> -->
         </div>
     </div>
-    <script>
-        window.addEventListener('load', function() {
-            var isMobile = window.innerWidth <= 768;
-            var isSlowConnection = navigator.connection && ['slow-2g', '2g', '3g'].includes(navigator.connection.effectiveType);
-            if (isMobile || isSlowConnection) {
-                document.getElementById('videoBG').style.display = 'none';
-                document.getElementById('bgImg').style.display = 'block';
-            }
-        });
-    </script>
 </body>
 
 </html>
