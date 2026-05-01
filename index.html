@@ -41,14 +41,16 @@
                 video.playsinline = true;
                 video.muted = true;
                 video.oncontextmenu = function() { return false; };
-                video.style.cssText = 'object-fit: cover; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -2; animation: fadeIn 1s;';
+                video.className = 'bgFade';
+                video.style.cssText = 'object-fit: cover; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -2;';
                 document.body.insertBefore(video, document.body.firstChild);
             } else {
                 var img = document.createElement('img');
                 img.id = 'bgImg';
+                img.className = 'bgFade';
                 img.src = 'img/bg.png';
                 img.oncontextmenu = function() { return false; };
-                img.style.cssText = 'object-fit: cover; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -2;';
+                img.style.cssText = 'object-fit: cover; width: 100%; height: 100vh; position: fixed; top: 0; left: 0; z-index: -2; animation: fadeIn 1s;';
                 document.body.insertBefore(img, document.body.firstChild);
             }
         });
@@ -56,7 +58,6 @@
 </head>
 
 <body>
-    <div class="body-wrapper">
     <div class="body-wrapper">
         <img class="logoDiv" src="img/Logo.png" oncontextmenu="return false;"></img>
         <div class="body-content">
