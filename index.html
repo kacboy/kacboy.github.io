@@ -33,6 +33,7 @@
 <body>
     <video id="videoBG" src="vid/Random Background.webm" autoplay loop playsinline muted
         oncontextmenu="return false;"></video>
+    <img id="bgImg" src="img/bg.png" style="display:none; object-fit: cover; width: 100%; height: 100%; position: fixed; top: 0; left: 0; z-index: -2;" oncontextmenu="return false;">
     <div class="body-wrapper">
         <img class="logoDiv" src="img/Logo.png" oncontextmenu="return false;"></img>
         <div class="body-content">
@@ -93,6 +94,16 @@
             </div> -->
         </div>
     </div>
+    <script>
+        window.addEventListener('load', function() {
+            var isMobile = window.innerWidth <= 768;
+            var isSlowConnection = navigator.connection && ['slow-2g', '2g', '3g'].includes(navigator.connection.effectiveType);
+            if (isMobile || isSlowConnection) {
+                document.getElementById('videoBG').style.display = 'none';
+                document.getElementById('bgImg').style.display = 'block';
+            }
+        });
+    </script>
 </body>
 
 </html>
